@@ -30,7 +30,7 @@ class Submit extends Action
             if ($data) {
                 $model = $this->extensionFactory;
                 $model->setData($data)->save();
-                $this->messageManager->addSuccessMessage(__("Data Saved Successfully323."));
+                $this->messageManager->addSuccessMessage(__("Data Saved Successfully."));
             }
         } catch (\Exception $e) {
             $this->messageManager->addErrorMessage($e, __("We can\'t submit your request, Please try again."));
